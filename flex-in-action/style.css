@@ -33,3 +33,21 @@ a {
   padding: 8px 12px;
   display: inline-block;
 }
+
+/* HERO */
+
+.hero {
+  min-height: 80vh;
+  background-color: coral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  /* kai norim truputi zemiau padeti viska */
+  padding-top: 100px;
+}
