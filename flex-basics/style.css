@@ -52,4 +52,15 @@ body {
   min-height: 200px;
   background-color: rgb(249, 197, 177);
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexContainerDirection {
+  min-height: 200px;
+  background-color: rgb(249, 197, 177);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: center;
 }
