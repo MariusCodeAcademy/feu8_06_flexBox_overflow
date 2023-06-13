@@ -64,15 +64,38 @@ h1 {
 .flex-item {
   border: 1px solid #000;
   position: relative;
-  flex-basis: 23%;
+  flex-basis: 49%;
   /* flex-basis: 32%;
   flex-basis: 100%; */
   flex-grow: 1;
 }
 .cat-title {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
   background-color: #333;
   color: #fff;
   display: inline-block;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.overlay {
+  background-color: rgba(100, 148, 237, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.flex-item:hover .overlay {
+  background-color: rgba(100, 148, 237, 0.5);
+}
+
+.flex-item:hover .cat-title {
+  opacity: 1;
 }
